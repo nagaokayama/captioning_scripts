@@ -1,5 +1,5 @@
 # captioning_scripts
-for Mitsua Contributors
+プロジェクト非公式のキャプション込みデータセット作成支援スクリプト群です。
 
 下のcolabボタンを押すとスクリプトが開きます。
 - キャプションファイル作成支援スクリプトたち
@@ -13,6 +13,12 @@ for Mitsua Contributors
 google drive、google colabの基本的な操作方法は各自調べてください。このスクリプトを使うにあたってgoogle colabへの課金はしなくても大丈夫だと思います。
 
 基本的には使いたいセルの入力フォームを上から埋めて「セルを実行」を押せばOK
+
+## 事前準備
+google drive内のファイルを利用する場合は一番上のセル「0. google driveのファイルを使用する場合はまずこのスクリプトを実行してください」を実行してください。
+
+google drive使用の有無に関係なく最初に一回だけ「0.必要なモジュールのインポートと関数の設定」を実行してください。
+
 
 
 ## 画像名と共通キャプションを各行に書き込んだcsvを生成（キャプションcsv生成）
@@ -42,8 +48,16 @@ google drive、google colabの基本的な操作方法は各自調べてくだ�
 そのような時は文字コードを指定して再度開くか、メモ帳でCSVファイルを一度開きそのまま保存してからエクセルで開き直すと表示が戻る可能性があります。
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/12c6a8c5-6cec-4d36-9c7a-ccfdf9929ebb)
 
+### 動物モード
+左上メニューバーの　ツール＞設定＞その他　のコーギー/カニ/猫モードをONにするとかわいくなります。
+![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/c9e85ed0-d061-4ed0-ba9d-46f31d8085a6)
+![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/111834e9-06a9-4f14-89cf-f771a39c40ff)
+
 
 # 修正履歴（大事な奴だけ。覚えてたら書く）
+
+2023/12/12　モジュールインポートを分離した関係でセルレイアウトとスクリプトの実行手順がやや変化
+
 2023/12/10  画像ファイルからCSVファイル生成セルについて、拡張子に大文字を含む画像ファイルの名前がcsvファイルにリストアップされない問題を修正
 
 2023/12/05　空の文字列タグをキャプションテキストに書き込まないように修正
