@@ -25,17 +25,14 @@ google drive使用の有無に関係なく最初に一回だけ「0.必要なモ
 
 ## 画像名と共通キャプションを各行に書き込んだcsvを生成（キャプションcsv生成）
 
-画像が入ったフォルダと、すべての画像に共通するキャプションを記入すると各横列にそれらを割り当てたcsvファイルを作ります。表計算アプリで読み込めます。
+画像が入ったフォルダと、すべての画像に共通するキャプションを記入すると各横列にそれらを割り当てたcsvファイルを作ります。各種表計算アプリで読み込めます。
 
-エクスポート時にexport_with_shiftjisのチェックをつけることでエクセルで開いても文字化けしなくなりました。
-
-![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/440fc1ce-303a-426c-81d7-ce42f63f62f8)
-![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/12c6a8c5-6cec-4d36-9c7a-ccfdf9929ebb)
+エクスポート時にexport_with_shiftjisのチェックをつけることでmicrosoftエクセルで開いても文字化けしなくなります。
 
 
 ## csvファイルから各画像用キャプションテキストファイルを生成（キャプションtxt生成）
 決まった形式のcsvファイル(後述)を読み込んで画像ごとのキャプションtxtに分割してくれます。生成されたtxtファイルをダウンロードして使ってください。
-![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/ad995699-7a8d-4c66-a405-f35c61a0e048)
+
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/b6b0a242-9711-4158-a692-f74ec835f001)
 
 
@@ -44,13 +41,7 @@ google drive使用の有無に関係なく最初に一回だけ「0.必要なモ
 
 「キャプションcsv生成」で生成されるcsvはこの形式に沿ったものが作られます。
 
-~~文字コードがユニコードで生成されるのでエクセルで開くと文字化けします。~~
-~~そのような時は文字コードを指定して再度開くか、メモ帳でCSVファイルを一度開きそのまま保存してからエクセルで開き直すと表示が戻る可能性があります。~~
-
-前述のcsv生成セル内でエンコード方式を切り替えることができるようになりました。
-
-![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/45851c8a-7d1d-4b90-a6a3-ac01073d5753)
-
+![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/65bbc0a9-9909-4257-9deb-0a8af0ec31c4)
 
 
 ## 🎨学習に適したサイズに画像をリサイズ（かなり自己責任でお願いします）
@@ -58,7 +49,6 @@ google drive使用の有無に関係なく最初に一回だけ「0.必要なモ
 
 一応元の画像を上書きしないように簡単なセーフティーはつけていますが確実な物ではありません。画像のパックアップを取ってからご利用ください。
 
-![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/27542285-bb88-4d9c-9670-38e7c6ac8e20)
 
 ## 👾画像（とキャプションtxt）を100個ずつフォルダに分配する（ちょっと慎重に使ってね）
 フォルダ内の画像をupload_zipの現行ルールに沿って100枚ずつ別フォルダへ分配します。
@@ -68,8 +58,7 @@ google drive使用の有無に関係なく最初に一回だけ「0.必要なモ
 画像と同名のテキストファイル（キャプションファイル）がある場合はこれも同時に分配されます。
 
 ちょっと自己責任ですがオプションをONにすることでzipファイルの作成やコピーを作成しないこともできます。
-![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/e1fe952f-a25a-4b54-8b80-7c9c15ffc7e2)
-![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/9f93a514-de8d-4365-a69e-71657a810435)
+
 
 ## 📦ZIPファイルを作成
 上記のファイルの分配セルからzipファイル圧縮機能を抜き出したものです。
