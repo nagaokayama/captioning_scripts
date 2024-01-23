@@ -11,6 +11,16 @@ csvファイルは表計算ソフトで読み込める形式です。テキス�
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nagaokayama/captioning_scripts/blob/main/Text_cordinator.ipynb)
 
+# 簡単な使い方の説明
+上のセルから順番に実行していくことでキャプションファイルの生成が容易です
+
+Googleドライブに画像ファイルをアップロード
+
+zip展開
+
+共通キャプションを記入してcsvを生成
+
+
 
 # How to Use
 
@@ -34,7 +44,7 @@ google drive使用の有無に関係なく最初に一回だけ「0.🎍必要�
 
 ## 📖画像名と共通キャプションを各行に書き込んだcsvを生成（キャプションcsv生成）
 
-画像が入ったフォルダと、すべての画像に共通するキャプションを記入すると各横列にそれらを割り当てたcsvファイルを作ります。各種表計算アプリで読み込めます。
+画像が入ったフォルダと、すべての画像に共通するキャプションを記入すると左端の縦列に画像名、各横列にキャプションを割り当てたcsvファイルを作ります。各種表計算アプリで読み込めます。
 
 エクスポート時にexport_with_shiftjisのチェックをつけることでmicrosoftエクセルで開いても文字化けしなくなります。
 
@@ -42,6 +52,7 @@ google drive使用の有無に関係なく最初に一回だけ「0.🎍必要�
 ## ✒csvファイルから各画像用キャプションテキストファイルを生成（キャプションtxt生成）
 決まった形式のcsvファイル(後述)を読み込んで画像ごとのキャプションtxtに分割してくれます。生成されたtxtファイルをダウンロードして使ってください。
 
+前述のセルで生成したcsvに限らず、形式が揃ってさえいればどのように作成されたcsvでも読み込むことができます
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/b6b0a242-9711-4158-a692-f74ec835f001)
 
 
