@@ -103,6 +103,7 @@ mitsua likesにアップロードする画像の最低サイズとモデルの�
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/c9e85ed0-d061-4ed0-ba9d-46f31d8085a6)
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/111834e9-06a9-4f14-89cf-f771a39c40ff)
 
+# よくある質問
 
 # 修正履歴（大きなもの）
 2024/02/12  hiec画像の読み込みに対応、リサイズ時のexifによる画像の回転を抑制
