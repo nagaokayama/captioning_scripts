@@ -46,7 +46,7 @@ google drive、google colabの基本的な操作方法は各自調べてくだ�
 
 google drive内のファイルを利用する場合は一番上のセル「0. ⛰google driveのファイルを使用する場合はまずこのスクリプトを実行してください」を実行してください。
 
-google drive使用の有無に関係なく**最初に一回だけ**「0.🎍必要なモジュールのインポートと関数の設定」を実行してください。
+google drive使用の有無に関係なく**最初に一回だけ**「0.🎍最初に一度だけ実行してください」を実行してください。
 
 
 
@@ -98,13 +98,20 @@ mitsua likesにアップロードする画像の最低サイズとモデルの�
 
 複数フォルダを一度に圧縮したいときはフォルダパスを,か、で区切って記入してください
 
+
+下のcolabボタンを押すとスクリプトが開きます。
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nagaokayama/captioning_scripts/blob/main/Text_cordinator.ipynb)
+
+
 ## おまけ　google colabの動物モード
-左上メニューバーの　ツール＞設定＞その他　のコーギー/カニ/猫モードをONにするとかわいくなります。
+左上メニューバーの　ツール＞設定＞その他　のコーギー/カニ/猫モードをONにすると画面がかわいくなります。
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/c9e85ed0-d061-4ed0-ba9d-46f31d8085a6)
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/111834e9-06a9-4f14-89cf-f771a39c40ff)
 
 # よくある質問
-
+　- name "xxx" is nor defined と出る
+ 
 # 修正履歴（大きなもの）
 2024/02/12  hiec画像の読み込みに対応、リサイズ時のexifによる画像の回転を抑制
 
