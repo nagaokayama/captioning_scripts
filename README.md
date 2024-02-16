@@ -110,7 +110,17 @@ mitsua likesにアップロードする画像の最低サイズとモデルの�
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/111834e9-06a9-4f14-89cf-f771a39c40ff)
 
 # よくある質問
-　- name "xxx" is nor defined と出る
+
+　- name "xxx" is not defined と出る
+
+「0.🎍最初に一度だけ実行してください」を実行してからもう一度エラーの出たセルを実行してください
+
+
+　- 特定の用途に特化したCSVファイルを作成して配布しても良い？
+
+特に許可なく作成配布して構いません。機能追加の要望があればお知らせください
+
+
  
 # 修正履歴（大きなもの）
 2024/02/12  hiec画像の読み込みに対応、リサイズ時のexifによる画像の回転を抑制
