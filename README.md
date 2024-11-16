@@ -52,7 +52,7 @@ google drive使用の有無に関係なく**最初に一回だけ**「0.🎍最�
 
 必要なモジュールのインストールや関数のセットアップが行われます。
 
-## 📖画像名と共通キャプションを各行に書き込んだcsvを生成（キャプションcsv生成）
+## 📖キャプション編集用csvテンプレートを生成
 
 画像が入ったフォルダと、すべての画像に共通するキャプションを記入すると左端の縦列に画像名、各横列にキャプションを割り当てたcsvファイルを作ります。生成したcsvは各種表計算アプリで読み込めます。
 
@@ -60,7 +60,7 @@ google drive使用の有無に関係なく**最初に一回だけ**「0.🎍最�
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/79e9251f-ba77-4f28-a103-da3d71b19dbf)
 
 
-## ✒csvファイルから各画像用キャプションテキストファイルを生成（キャプションtxt生成）
+## ✒csvからキャプションファイルを生成
 決まった形式のcsvファイル(後述)を読み込んで画像ごとのキャプションtxtに分割してくれます。生成されたtxtファイルをダウンロードして使ってください。
 
 前述のセルで生成したcsvに限らず、形式が揃ってさえいればどのようなcsvでも読み込むことができます
@@ -75,7 +75,7 @@ google drive使用の有無に関係なく**最初に一回だけ**「0.🎍最�
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/65bbc0a9-9909-4257-9deb-0a8af0ec31c4)
 
 
-## 🎨学習に適したサイズに画像をリサイズ（自己責任でお願いします）
+## 🎨学習向けに画像サイズを変更（自己責任でお願いします）
 mitsua likesにアップロードする画像の最低サイズとモデルの学習に十分な解像度の両方を満たすように画像をリサイズします。
 
 具体的には短辺512px以上、画素数が2の20乗px（処理上は110万pxを目安にしています）を両方満たすように拡大もしくは縮小して指定したフォルダへ新しい画像として保存します。
@@ -84,7 +84,7 @@ mitsua likesにアップロードする画像の最低サイズとモデルの�
 
 このリサイズ処理を通すことでファイルサイズが小さくなるので最大枚数の100枚でzipにまとめてもファイルサイズがたいていの場合discordのアップロード上限サイズ内に収まる利点もあります。
 
-## 👾画像（とキャプションtxt）を100個ずつフォルダに分配する（慎重に使ってください）
+## 👾画像を100枚ずつフォルダに分配する（自己責任でお願いします）
 フォルダ内の画像をupload_zipの現行ルールに沿って100枚ずつ別フォルダへ分配します。
 
 分配先に指定したフォルダの下位にサブフォルダ（sub_1, sub_2...）が作成され、ここに100枚ずつ画像がコピーされます。
@@ -95,7 +95,7 @@ mitsua likesにアップロードする画像の最低サイズとモデルの�
 ![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/f6f34565-f04f-4bb3-beb2-cf9347b6a75e)
 
 
-## 📦ZIPファイルを展開/ZIPファイルを作成
+## 📦ZIPファイルを展開/🎊ZIPファイルを作成
 指定したフォルダの中身をzipに圧縮もしくは指定したzipファイルを展開します
 
 複数フォルダを一度に圧縮したいときはフォルダパスを,か、で区切って記入してください
@@ -105,11 +105,6 @@ mitsua likesにアップロードする画像の最低サイズとモデルの�
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nagaokayama/captioning_scripts/blob/main/Text_cordinator.ipynb)
 
-
-## おまけ　google colabの動物モード
-左上メニューバーの　ツール＞設定＞その他　のコーギー/カニ/猫モードをONにすると画面がかわいくなります。
-![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/c9e85ed0-d061-4ed0-ba9d-46f31d8085a6)
-![image](https://github.com/nagaokayama/captioning_scripts/assets/152504610/111834e9-06a9-4f14-89cf-f771a39c40ff)
 
 # よくある質問
 
