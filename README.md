@@ -1,5 +1,8 @@
 # これは何？
-プロジェクト非公式のキャプション込み画像データ作成支援スクリプトです。
+ML-LabelMateと言います。
+プロジェクト非公式のキャプションファイル作成支援スクリプトです。
+
+現在google colab版のみ提供しています。
 
 キャプションtextの作成補助用csvファイルの生成、csvからキャプションファイルの生成、画像の自動リサイズ機能などを提供しています。
 
@@ -7,7 +10,7 @@ csvファイルはエクセルに代表される表計算ソフトで読み込�
 
 同一ではないが類似したキャプションを持つ大量の画像に対して特に効果的です。
 
-下のcolabボタンを押すとスクリプトが開きます。
+下のcolabボタンを押すとノートブックが開きます。
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nagaokayama/captioning_scripts/blob/main/Text_cordinator.ipynb)
 
